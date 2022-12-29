@@ -1,0 +1,85 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "My House",
+    "phone_number": "(+965) 994 847 89",
+    "address": "World cross center",
+    "website": "https://rahulshettyacademy.com",
+    "language": "Arabic",
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "types": [
+        "Farwaniya park",
+        "Cafe"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Thu, 29 Dec 2022 13:36:02 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "0b125b5f64f6df9c7fa9ed68fbd324a9",
+    "scope": "APP",
+    "reference": "c4ceef9093defa7dbcfcce35ff34b0e0c4ceef9093defa7dbcfcce35ff34b0e0",
+    "id": "c4ceef9093defa7dbcfcce35ff34b0e0"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0b125b5f64f6df9c7fa9ed68fbd324a9
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=0b125b5f64f6df9c7fa9ed68fbd324a9
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 29 Dec 2022 13:36:03 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 257
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "My House",
+    "phone_number": "(+965) 994 847 89",
+    "address": "World cross center",
+    "types": "Farwaniya park,Cafe",
+    "website": "https://rahulshettyacademy.com",
+    "language": "Arabic"
+}
